@@ -1,0 +1,130 @@
+/*#region sideBar*/
+nav.sideNav{
+    display: none;
+    z-index: 990;
+}
+.webTitle{
+    color: rgb(158, 170, 175);
+    backdrop-filter: blur(4px);
+    margin: 0.6rem;
+    /* border: 2px solid red; */
+}   .webTitle > h3{
+        font-size: 1.8rem;
+        font-weight: 800;
+    } .webTitle > p{
+        font-weight: 500;
+        font-size: 0.8rem;
+        margin-left: 3rem;
+        margin-top: -0.3rem;
+        white-space: nowrap;
+    }
+.sideBarContainer{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 30%;
+    background-color: rgba(245, 245, 245, 0.623);
+}
+.sideBarContainer .social-icons{
+    margin-top: 0.5rem;
+    margin-left: 1.7rem;
+}
+
+.sideBarSocialIcon{
+    border: none;
+    color: #606060;
+    font-size: 1.5rem;
+    font-weight: 400;
+    background-color: transparent;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 2s ease;
+}   
+
+.sidebarIconAnimate{
+    opacity: 1;
+} 
+
+
+ul.sideBar{
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    backdrop-filter: blur(8px);
+    align-items: flex-start;
+    justify-content: flex-start;
+} 
+    .sideBar li{
+        width: 100%;
+        line-height: 2.5rem;
+        padding: 3px;
+        padding-left: 1rem;
+    }   .sideBar a{
+        width: 100%;
+        height: 100%;
+        line-height: 2.5rem;
+        display: block;
+    }
+        .sideBarLst:hover, .sideBar a:hover{
+            width: 100%;
+            background-color: #d6d6d6;
+            border-radius: 2px;
+            transition: background-color 0.3s ease;
+        }
+/*#endregion sideBar*/
+
+@media screen and (min-width: 576px){
+    .webTitle{
+        margin:1.2rem;
+    }
+    .webTitle > h3{
+        font-size: 2rem;
+    }
+    .webTitle > p{
+        font-size: 1rem;
+        margin-left: 4rem;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    /*#region SideBar*/
+    nav.sideNav{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 25%;
+        min-width: 250px;
+    }   .webTitle > h3{
+            color: #606060;
+            font-size: 2.5rem;
+        } .webTitle > p{
+            color: white;
+            font-size: 1.2rem;
+        }
+        .sideBarContainer{
+            background-color: rgb(127, 179, 247);
+            left: 0;
+            width: 25%;
+            min-width: 250px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        } .sideBar{
+            width: 25%;
+            backdrop-filter: none;
+        } .sideBar a{
+            color: white;
+            font-size: 1.5rem;
+            padding-left: 1rem;
+        } #closeBtn{
+            display: none;
+        } 
+        .sideBarContainer .social-icons{
+            display: block;
+            color: #606060;
+            font-size: 1.5rem;
+            margin: 1.5rem;
+        }
+/*#endregion SideBar*/
+}

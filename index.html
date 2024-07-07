@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>MY Portfolio</title>
+</head>
+<body>
+    <div id="loading">
+        <div class="spinner"></div>
+    </div>
+    <div class="bodyContent">
+        <header>
+            <nav class="topNav">
+                <ul class="topNavBar">
+                    <li><a href="#" class="imgAddr"><img id="navImg" src="./Cinna.jpg" alt="myPhoto" width="60px" height="50px"></a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="./projectPage/projects.html">Projects</a></li>
+                    <li><a href="./contactPage/contact.html">Contact Me</a></li>
+                    <li class="sidebarBtn openSideBar"><span class=" topNavBarMenuBtn material-symbols-outlined">menu</span></li>
+                </ul>
+                <button class="menuIconBtn openSideBar">
+                    <span class="menuBtn material-symbols-outlined">menu</span>
+                </button>
+            </nav>
+        </header>
+
+        <main>
+            <nav class="sideNav">
+                <div class="sideBarContainer">
+                    <div class="webTitle">
+                        <h3>Portfolio</h3>
+                        <p>By MichelleYeh</p>
+                    </div>
+                    <ul class="sideBar">
+                        <li id="closeBtn"><span class="material-symbols-outlined closeBtn">close</span></li>
+                        <li class="sideBarLst"><a href="#">Home</a></li>
+                        <li class="sideBarLst"><a href="./projectPage/projects.html">Projects</a></li>
+                        <li class="sideBarLst"><a href="./contactPage/contact.html">Contact Me</a></li>
+                        <li class="sideBarLst"><a id="googleLink" href="https://www.google.com" target="_blank">Go to Google</a></li>
+                        <li class="sideBarLst"><a href="https://www.youtube.com/">Go to Youtube</a></li>
+                    </ul>
+                    <div class="social-icons">
+                        <!-- <i class="ri-mail-line sideBarSocialIcon sidebarIconAnimate"></i>
+                        <i class="ri-linkedin-box-line sideBarSocialIcon sidebarIconAnimate"></i>
+                        <i class="ri-github-fill sideBarSocialIcon sidebarIconAnimate"></i> -->
+                        <button class="sideBarSocialIcon sidebarIconAnimate emailBtn"><i class="ri-mail-line social-icon iconAnimate"></i></button>
+                        <a href="https://github.com/Michelle-mm" class="sideBarSocialIcon sidebarIconAnimate"><i class="ri-linkedin-box-line sideBarSocialIcon sidebarIconAnimate"></i></a>
+                        <a href="https://github.com/Michelle-mm" class="sideBarSocialIcon sidebarIconAnimate"><i class="ri-github-fill "></i></a>
+                    </div> 
+                </div>
+            </nav>
+            <div class="mainContent">
+                <div class="top">
+                    <div class="confirmCopyBox">
+                        <p>COPIED!<i class="ri-checkbox-circle-line checkIcon"></i></p>
+                    </div>
+                    <button class="menuIconBtn openSideBar">
+                        <span class="menuBtn material-symbols-outlined">menu</span>
+                    </button>
+                    <div class="topContent">
+                        <div class="topText">
+                            <h2 class="text text-transition">Hello!</h2>
+                            <h2 class="text text-transition">I'm Michelle, a Web Developer</h2>
+                            <p class="text text-transition">I'm a passionate junior front-end developer 
+                                specializing in creating responsive and user-friendly web interfaces.
+                            </p>
+                        </div>
+                        <div class="social-icons social-iconsTransition">
+                            <!-- <i class="ri-file-copy-line"></i> -->
+                            <button class="social-icon iconAnimate emailBtn"><i class="ri-mail-line social-icon iconAnimate"></i></button>
+                            <a href="https://github.com/Michelle-mm" class="social-icon iconAnimate"><i class="ri-linkedin-box-line social-icon iconAnimate"></i></a>
+                            <a href="https://github.com/Michelle-mm" class="social-icon iconAnimate"><i class="ri-github-fill "></i></a>
+                        </div>  
+                        <!-- <div class="confirmCopyBox">
+                            <p>COPIED!<i class="ri-checkbox-circle-line checkIcon"></i></p>
+                        </div> -->
+                    </div>
+                    <div class="topImg">
+                        <div class="squares">
+                            <div class="square"></div>
+                            <div class="square"></div>
+                            <div class="square"></div>
+                            <div class="square"></div>
+                            <div class="computerShape">
+                                <i class="ri-computer-line">
+                                    <i class="ri-code-s-slash-line"></i>
+                                </i>
+                            </div>
+                        </div>
+                            <!-- <div class="computerShape">&lt;/&gt;</div> -->
+                    </div>
+                </div>
+                <div class="about">
+                    <h2>About Me</h2>
+                    <div class="aboutSec edu">
+                        <!-- <i class="ri-graduation-cap-fill"></i> -->
+                        <p class="aboutHeader">Education:</p>
+                        <p class="aboutContent">Yuan Ze University ---- 06/2023</p>
+                    </div>
+                    <div class="aboutSec gradProject">
+                        <p class="aboutHeader">Graduation Project:</p>
+                        <p class="aboutContent">VR 3D-Face-reconstruction system</p>
+                    </div>
+                    <div class="aboutSec exp">
+                        <p class="aboutHeader">Experience --- <span>UIUC Intern:</span></p>
+                        <p class="aboutContent">&nbsp;&nbsp;I completed a one-month internship in 
+                            <a href="https://ahs.illinois.edu/jan">
+                                <span>Professor Jan's Rehabilitation 
+                                Engineering Research Lab at UIUC.</span>
+                            </a>
+                            Our group analysized how the elastophy and ultrasound image of human ham 
+                            will be after different cupping pressures. Also, we classified the images 
+                            with Deep Learning and traditional Image Recognition
+                        </p>
+                    </div>
+                    
+                </div>
+                <div class="projectBG">
+                    <div class="projectsSection">
+                        <h2>Projects</h2>
+                        <p>Here are my projects</p>
+                        <div class="projectBoxs">
+                            <div class="projectBox projectBox-transition">
+                                <i class="ri-shopping-bag-4-line"></i>
+                                <a href="https://github.com/Michelle-mm/dashboard">Admin Dashboard</a>
+                                <p>A e-commerce platform interface includes different tables, and three extra functions.</p>
+                            </div>
+                            <div class="projectBox projectBox-transition">
+                                <i class="ri-id-card-line"></i>
+                                <a href="https://github.com/Michelle-mm/meme_generator">Meme Generator</a>
+                                <p>A meme generator that could type in custom texts.</p>
+                            </div>
+                            <div class="projectBox projectBox-transition">
+                                <i class="ri-apps-line"></i>
+                                <a href="https://github.com/Michelle-mm/Note_APP">Note App</a>
+                                <p>A simple note app that includes basic functions, create and delete notes, notes ordering by update-date, etc.</p>
+                            </div>
+                            <div class="projectBox projectBox-transition">
+                                <i class="ri-news-line"></i>
+                                <a href="https://github.com/Michelle-mm/movieAPI_miniProject">Movie Searching App</a>
+                                <p>A dynamic movie searching app.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact">
+                    <!-- <div class="comment">
+                        <h2>Contact Me</h2>
+                        <input type="text" class="commentBox" placeholder="comments">
+                        <button type="button" class="commentBtn">Send</button>
+                    </div> -->
+                </div>
+                <div class="mainBottom copyrightBG">
+                    <p class="copyright">&lt;&lt;&lt; &copy; Michelle &gt;&gt;&gt;</p>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <div class="copyrightBG">
+                <p class="copyright">&lt;&lt;&lt; &copy; Michelle &gt;&gt;&gt;</p>
+            </div>
+        </footer>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

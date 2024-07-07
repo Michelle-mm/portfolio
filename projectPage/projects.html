@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./projects.css" />
+        <link rel="stylesheet" href="../sidebar.css">
+        <link rel="stylesheet" href="../topNavbar.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    </head>
+    <body>
+        <header>
+            <nav class="topNav">
+                <ul class="topNavBar">
+                    <li><a href="../index.html" class="imgAddr"><img id="navImg" src="../Cinna.jpg" alt="myPhoto" width="60px" height="50px"></a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="../contactPage/contact.html">Contact Me</a></li>
+                    <li class="sidebarBtn openSideBar"><span class=" topNavBarMenuBtn material-symbols-outlined">menu</span></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!-- <div class="mainContainer"> -->
+                <nav class="sideNav">
+                    <div class="sideBarContainer">
+                        <div class="webTitle">
+                            <h3>Portfolio</h3>
+                            <p>By MichelleYeh</p>
+                        </div>
+                        <ul class="sideBar">
+                            <li id="closeBtn"><span class="material-symbols-outlined closeBtn">close</span></li>
+                            <li class="sideBarLst"><a href="../index.html">Home</a></li>
+                            <li class="sideBarLst"><a href="#">Projects</a></li>
+                            <li class="sideBarLst"><a href="../contactPage/contact.html">Contact Me</a></li>
+                            <li class="sideBarLst"><a id="googleLink" href="https://www.google.com" target="_blank">Go to Google</a></li>
+                            <li class="sideBarLst"><a href="https://www.youtube.com/">Go to Youtube</a></li>
+                        </ul>
+                        <div class="social-icons">
+                            <button class="sideBarSocialIcon emailBtn"><i class="ri-mail-line"></i></button>
+                            <a href="https://github.com/Michelle-mm" class="sideBarSocialIcon"><i class="ri-linkedin-box-line"></i></a>
+                            <a href="https://github.com/Michelle-mm" class="sideBarSocialIcon"><i class="ri-github-fill "></i></a>
+                        </div> 
+                    </div>
+                </nav>
+                <section class="projectsContainer">
+                    <div class="heading">
+                        <div class="confirmCopyBox">
+                            <p>COPIED!<i class="ri-checkbox-circle-line checkIcon"></i></p>
+                        </div>
+                        <h1>My Projects:</h1>
+                        <button class="menuIconBtn openSideBar">
+                            <i class="menuBtn ri-menu-line"></i>
+                        </button>
+                    </div>
+                    <div class="projects">
+                        <div class="project">
+                            <h3 class="projectTitle"><a href="https://github.com/Michelle-mm/dashboard">Admin Dashboard</a></h3>
+                            <p class="projectDetail">A e-commerce platform interface includes different tables, and three extra functions.</p>
+                            <div class="projectImg"></div>
+                        </div>
+                        <div class="project">
+                            <h3 class="projectTitle"><a href="https://github.com/Michelle-mm/meme_generator">Meme Generator</a></h3>
+                            <p class="projectDetail">A meme generator that could type in custom texts.</p>
+                            <div class="projectImg"></div>
+                        </div>
+                        <div class="project">
+                            <h3 class="projectTitle">
+                                <a href="https://github.com/Michelle-mm/Note_APP">Note App</a>
+                            </h3>
+                            <p class="projectDetail">A simple note app that includes basic functions, create and delete notes, notes ordering by update-date, etc.</p>
+                            <div class="projectImg"></div>
+                        </div>
+                        <div class="project">
+                            <h3 class="projectTitle">
+                                <a href="https://github.com/Michelle-mm/movieAPI_miniProject">Movie Searching App</a>
+                            </h3>
+                            <p class="projectDetail">A dynamic movie searching app.</p>
+                            <div class="projectImg"></div>
+                        </div>
+                        <div class="project addNewProject">
+                            <h3 class="projectTitle">
+                                <a href="#">Add project</a>
+                            </h3>
+                            <i class="ri-add-large-line"></i>
+                        </div>
+                    </div>
+                </section>
+                <form class="addProjectWindow">
+                    <i class="ri-close-circle-line formCloseBtn"></i>
+                    <fieldset>
+                        <legend>New project information</legend>
+                        <label for="authority_code">
+                            Authurity Code
+                            <input type="password" class="authorityCode" id="authority_code" name='code' placeholder="authority code" required/>
+                            <p class='wrongCode'></p>
+                        </label>
+                        <label for="Project_Name">
+                            Project Name
+                        </label>
+                            <input type="text" id='Project_Name' name='projectName' required/>
+                        <label for="Project_Description">
+                            Project Description
+                        </label>
+                            <input type='text' id="Project_Description" class="inputDescription" name='projectDescription' required/>
+                        <label for="Project_Link">
+                            Project Link
+                        </label>
+                            <input type="url" id="Project_Link" name='projectLink'required><br>
+                        <button class="addBtn" type="button">ADD</button>
+                    </fieldset>
+                </form>
+            <!-- </div> -->
+        </main>
+        <script src='./projectScript.js'></script>
+        
+    </body>
+</html>

@@ -57,8 +57,11 @@ emailBtns.forEach((emailBtn)=>{
 );
 async function copyToClipboard(text){
     try {
-        console.log('click');
         await navigator.clipboard.writeText(text);
+        let posY = document.documentElement.scrollTop || document.body.parentElement.scrollTop;
+        let posX = document.documentElement.offsetWidth;
+        confirmCopyBox.style.top = `${posY + 20}px`;
+        confirmCopyBox.style.left = `${posX/2}px`;
         confirmCopyBox.classList.add('confirmCopyBoxFade');
     } catch (err) {
         console.log('failed');

@@ -26,6 +26,9 @@ a, li{
     line-height: 1.5rem;
     white-space: nowrap;
 }
+button{
+    cursor: pointer;
+}
 nav > a{
     height: 100%;
 }
@@ -37,116 +40,24 @@ nav.topNav{
     width: 100%;
     height: 80px;
 }
-img#navImg{
-    width: 2.7rem;
-    height: 2.5rem;
-    border-radius: 50%;
-}
-/*#region top navBar*/
-nav > ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 7px;
-    font-size: 1.2rem;
-    font-weight: 500;
-    padding: 1.3rem;
-}
 
-    ul.topNavBar{
-        display: none;
-        width: 80%;
-        min-width: fit-content;
-        height: 60px;
-        background-color: whitesmoke;
-        justify-content: space-evenly;
-        margin: 10px auto;
-        border-radius: 20px;
-        box-shadow: 5px 3px 4px #e9e7e7;
-        overflow: hidden;
+.menuIconBtn{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    color: var(--BGBLUE);
+    background-color: transparent;
+    border: none;
+}   .menuBtn{
+        font-size: 5rem;
+        transform: scale(1.3);
+}
+    .menuBtn:hover, span.closeBtn:hover{
+        background-color: rgba(234, 236, 236, 0.719);
+        box-shadow: 3px 2px 2px #c5c5c5ce;
+        border-radius: 45%;
+        padding: 2px;
     }
-        ul.topNavBar a:hover, nav.topNav span:hover{
-            background-color: #dbdbdbc9;
-            border-radius: 5px;
-            padding: 0.7rem 0.5rem;
-        } .sidebarBtn > a:hover{
-            background-color: transparent;
-            } span.topNavBarMenuBtn:hover{
-                padding: 0.5rem ;
-            }
-        ul.topNavBar a.imgAddr:hover{
-            background-color: transparent;
-        }
-        img#navImg:hover{
-            border-radius: 50%;
-            background-color: #dbdbdbc9;
-        }
-        .menuIconBtn{
-            position: absolute;
-            top: 15px;
-            right: 20px;
-            color: var(--BGBLUE);
-            background-color: transparent;
-            border: none;
-        }   .menuBtn{
-                font-size: 5rem;
-                transform: scale(1.3);
-        }
-            .menuBtn:hover, span.closeBtn:hover{
-                background-color: rgba(234, 236, 236, 0.719);
-                box-shadow: 3px 2px 2px #c5c5c5ce;
-                border-radius: 45%;
-                padding: 2px;
-            }
-/*#endregion top navBar*/
-
-    /*#region sideBar*/
-        nav.sideNav{
-            display: none;
-            z-index: 990;
-        }
-        .webTitle{
-            color: rgb(158, 170, 175);
-            backdrop-filter: blur(4px);
-            margin: 1.2rem;
-        }   .webTitle > h3{
-                font-size: 2rem;
-                font-weight: 800;
-            } .webTitle > p{
-                font-weight: 500;
-                font-size: 1rem;
-                margin-left: 4rem;
-                margin-top: -0.3rem;
-            }
-        .sideBarContainer{
-            position: fixed;
-            top: 0;
-            right: 0;
-            height: 100vh;
-            width: 30%;
-            background-color: rgba(245, 245, 245, 0.623);
-        }
-        ul.sideBar{
-            display: flex;
-            flex-flow: column wrap;
-            width: 100%;
-            backdrop-filter: blur(8px);
-            align-items: flex-start;
-            justify-content: flex-start;
-        }
-            .sideBar li, .sideBar a{
-                width: 100%;
-                line-height: 2.5rem;
-                padding: 3px;
-                padding-left: 1rem;
-                display: block;
-            }.sideBarLst:hover, .sideBar a:hover{
-                width: 100%;
-                background-color: #d6d6d6;
-                border-radius: 2px;
-                transition: background-color 0.3s ease;
-            }
-    /*#endregion sideBar*/
 
    
     
@@ -203,6 +114,32 @@ main, .mainContent{
         animation-delay: 1.5s;
         opacity: 0;
     }
+    
+    .resumeBtn{
+        width: 95px;
+        padding: 0.8rem;
+        margin-left: 1rem;
+        border: none;
+        border-radius: 8px;
+        box-shadow: 0 5px rgb(100, 166, 252);
+        background-color: var(--BGBLUE);
+        color: white;
+        font-size: 1.1rem;
+        font-weight: 700;
+        cursor: pointer;
+        text-align: center;
+        outline: none;
+        opacity: 0;
+        animation: 2.2s resumeBtnAnimate 2s ease forwards;
+    } .resumeBtn:active{
+        box-shadow: none;
+        transform: translateY(5px);
+    }   .resumeBtn:hover{
+        opacity: 0.8;
+    } 
+    @keyframes resumeBtnAnimate{
+       100%{opacity: 1;}
+    }
 
     @keyframes IconMovement{
         0%{
@@ -227,35 +164,6 @@ main, .mainContent{
         }
     }
     
-.confirmCopyBox{
-    width: fit-content;
-    height: fit-content;
-    padding: 0.2rem 0.2rem 0.3rem;
-    border: 1px solid lime;
-    border-radius: 10px;
-    background-color: white;
-    font-weight: 700;
-    font-size: 1rem;
-    text-align: center;
-    margin: 0 auto;
-    position: absolute;
-    opacity: 0;
-    z-index: 99;
-}   
-    .confirmCopyBoxFade{
-        animation: fade 2s ease forwards;
-    }  
-    .checkIcon{
-        background-color: lime;
-        border-radius: 50%;
-        color: white;
-        font-size: 1.4rem;
-        margin-left: 5px;
-    }
-    @keyframes fade{
-        45%{ opacity: 1;}
-    }
-
 /*---------------------------------------------*/
 
 .top{
@@ -362,21 +270,7 @@ main, .mainContent{
             transition: opacity 2.5s ease, transform 2.5s ease;
             }
         }
-    .resumeBtn{
-        width: 95px;
-        padding: 0.8rem;
-        margin-left: 1rem;
-        border: none;
-        border-radius: 8px;
-        background-color: var(--BGBLUE);
-        color: white;
-        font-size: 1.1rem;
-        font-weight: 700;
-        text-align: center;
-    } .resumeBtn:hover{
-        opacity: 0.8;
-        cursor: pointer;
-    }
+   
 /*#endregion top Content & Text*/
         
         
@@ -503,10 +397,12 @@ main, .mainContent{
 .contactLst li{
     line-height: 2rem;
     font-weight: 600;
+    cursor: auto;
 }
 
 .contactLst .social-icon{
     padding: 0 5px;
+    cursor: auto;
 }
 /*#endregion contact*/
 
@@ -543,40 +439,6 @@ footer{
     .mainContent{
         width: 75%;
     }
-/*#region SideBar*/
-        nav.sideNav{
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-            width: 25%;
-        }   .webTitle > h3{
-                color: #606060;
-                font-size: 2.5rem;
-            } .webTitle > p{
-                color: white;
-                font-size: 1.2rem;
-            }
-            .sideBarContainer{
-                background-color: rgb(127, 179, 247);
-                left: 0;
-                width: 25%;
-                display: flex;
-                flex-direction: column;
-                gap: 25px;
-            } .sideBar{
-                width: 25%;
-                backdrop-filter: none;
-            } .sideBar a{
-                color: white;
-                font-size: 1.5rem;
-                padding-left: 1rem;
-            } #closeBtn{
-                display: none;
-            } 
-            .sideNav .social-icons{
-                display: block;
-            }
-    /*#endregion SideBar*/
     
 /*#region topImgAnimation*/
 
@@ -640,9 +502,6 @@ footer{
 @media screen and (min-width: 576px){
     header{
         display: block;
-    }
-    ul.topNavBar{
-        display: flex;
     }
     button.menuIconBtn{
         display: none;

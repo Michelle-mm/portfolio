@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./sidebar.css">
+    <link rel="stylesheet" href="./topNavbar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -11,14 +13,11 @@
     <title>MY Portfolio</title>
 </head>
 <body>
-    <div id="loading">
-        <div class="spinner"></div>
-    </div>
     <div class="bodyContent">
         <header>
             <nav class="topNav">
                 <ul class="topNavBar">
-                    <li><a href="#" class="imgAddr"><img id="navImg" src="./Cinna.jpg" alt="myPhoto" width="60px" height="50px"></a></li>
+                    <li><a href="#" class="imgAddr"><img id="navImg" src="./imgs/Cinna.jpg" alt="myPhoto" width="60px" height="50px"></a></li>
                     <li><a href="#">Home</a></li>
                     <li><a href="./projectPage/projects.html">Projects</a></li>
                     <li><a href="#contact">Contact Me</a></li>
@@ -34,8 +33,10 @@
             <nav class="sideNav">
                 <div class="sideBarContainer">
                     <div class="webTitle">
-                        <h3>Portfolio</h3>
-                        <p>By MichelleYeh</p>
+                        <a href="#">
+                            <h3>Portfolio</h3>
+                            <p>By MichelleYeh</p>
+                        </a>
                     </div>
                     <ul class="sideBar">
                         <li id="closeBtn"><span class="material-symbols-outlined closeBtn">close</span></li>
@@ -53,10 +54,10 @@
                 </div>
             </nav>
             <div class="mainContent">
+                <div class="confirmCopyBox">
+                    <p>COPIED!<i class="ri-checkbox-circle-line checkIcon"></i></p>
+                </div>
                 <div class="top">
-                    <div class="confirmCopyBox">
-                        <p>COPIED!<i class="ri-checkbox-circle-line checkIcon"></i></p>
-                    </div>
                     <button class="menuIconBtn openSideBar">
                         <span class="menuBtn material-symbols-outlined">menu</span>
                     </button>
@@ -147,9 +148,9 @@
                     <hr style="width: 95%; margin: 0.5rem auto;">
                     <ul class="contactLst">
                         <li><i class="fa fa-phone social-icon" style="font-size: 1.3rem; margin: 0 6px 0 2px;"></i>Phone: (+886) 0975733912</li>
-                        <li><i class="ri-mail-line social-icon"></i>Email: rilakkuma71945@gmail.com</li>
+                        <li><i class="ri-mail-line social-icon"></i><span class="emailBtn" style="cursor: pointer;">Email: rilakkuma71945@gmail.com</span></li>
                         <li><i class="ri-github-fill social-icon"></i> Github: <a href="https://github.com/Michelle-mm">Michelle-mm</a></li>
-                        <li><i class="ri-linkedin-box-line social-icon"></i>LinkedIn: <a href="www.linkedin.com/in/思辰-葉-47068830a"></a></li>
+                        <li><i class="ri-linkedin-box-line social-icon"></i>LinkedIn <a href="www.linkedin.com/in/思辰-葉-47068830a">葉思辰MichelleYeh</a></li>
                     </ul>
                 </div>
                 <div class="mainBottom copyrightBG">

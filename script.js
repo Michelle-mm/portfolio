@@ -40,7 +40,6 @@ const sideBarSocialIcons = document.querySelectorAll('.sideBarSocialIcon');
 const texts = document.querySelectorAll('.text');
 const projectBox = document.querySelectorAll('.projectBox');
 document.addEventListener('DOMContentLoaded', 
-        // animateScrollToView(socialIcons, 'iconAnimate', !needSeperate),
         animateScrollToView(sideBarSocialIcons, 'iconAnimate', needSeperate),
         animateScrollToView(texts, 'text-transition', !needSeperate),
         animateScrollToView(projectBox, 'projectBox-transition', !needSeperate)
@@ -66,12 +65,9 @@ async function copyToClipboard(text){
         alert.error('Failed to copy: ', err);
     }
 }
-// emailBtn.onclick = copyToClipboard("rilakkuma71945@gmail.com");
 
-// window.addEventListener('load', function() {
-//     const loading = document.getElementById('loading');
-//     loading.classList.add('loading-hidden');
-//     loading.addEventListener('transitionend', ()=>{
-//         document.body.removeChild('loading');
-//     })
-// });
+const openResume = document.querySelector('.resumeBtn');
+function openPDF() {
+    window.open('https://Michelle-mm.github.io/portfolio/resume.pdf', '_blank');
+}
+openResume.onclick = openPDF;

@@ -7,35 +7,9 @@
     --BGBLUE: rgb(127, 179, 247);
     --BGGRAY: #e9e7e7; 
 }
-/*#region Loading*/
-    /* #loading {
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #3498db;
-        z-index: 9999;
-    }
-    .loading-hidden{
-        opacity: 0;
-        visibility: hidden;
-    }
-    .spinner {
-        border: 8px solid #f3f3f3;
-        border-top: 8px solid #3498db;
-        border-radius: 50%;
-        width: 60px;
-        height: 60px;
-        animation: spin 1s linear infinite;
-    }
-
-    @keyframes spin {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
-    } */
-/*#endregion Loading*/
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     background-color: whitesmoke;
@@ -43,7 +17,6 @@ body{
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    /* border: 2px solid red; */
 }
 a, li{
     text-decoration: none;
@@ -389,6 +362,21 @@ main, .mainContent{
             transition: opacity 2.5s ease, transform 2.5s ease;
             }
         }
+    .resumeBtn{
+        width: 95px;
+        padding: 0.8rem;
+        margin-left: 1rem;
+        border: none;
+        border-radius: 8px;
+        background-color: var(--BGBLUE);
+        color: white;
+        font-size: 1.1rem;
+        font-weight: 700;
+        text-align: center;
+    } .resumeBtn:hover{
+        opacity: 0.8;
+        cursor: pointer;
+    }
 /*#endregion top Content & Text*/
         
         
@@ -494,32 +482,31 @@ main, .mainContent{
 /*#region contact*/
 .contact{
     width: 100%;
-    padding: 20px;
+    min-height: 350px;
+    padding: 1.5rem 1.5rem 2rem;
     color: #606060;
 }
-.comment{
-    margin: 2rem;
-    display: flex;
-    flex-flow: column wrap;
-    gap: 20px;
-    width: 30%;
+.contact p{
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    color: var(--BGBLUE);
+}
+.contact h2{
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+.contactLst{
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+}
+.contactLst li{
+    line-height: 2rem;
+    font-weight: 600;
 }
 
-.comment > input.commentBox{
-    width: 300px;
-    height: 200px;
-    border: none;
-    border-radius: 10px;
-    box-shadow: inset -3px -3px 2px #e0e0e0;
-    padding: 10px;
-}.comment > .commentBtn{
-    width: 80px;
-    height: 40px;
-    background-color: var(--BGBLUE);
-    border: none;
-    border-radius: 10px;
-    color: white;
-    cursor: pointer;
+.contactLst .social-icon{
+    padding: 0 5px;
 }
 /*#endregion contact*/
 

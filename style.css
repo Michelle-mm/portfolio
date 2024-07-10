@@ -239,7 +239,7 @@ main, .mainContent{
 /*#region top Content & Text*/
     .topContent{
         width: 60%;
-        height: 85%;
+        height: 90%;
         padding: 2.5rem 1.5rem;
         display: flex;
         flex-flow: column wrap;
@@ -260,6 +260,8 @@ main, .mainContent{
             font-size: 1.2rem;
             color: #606060;
             margin: 1rem 0;
+        } .topText .text span{
+            white-space: nowrap;
         }
         .text-transition {
             opacity: 1;
@@ -273,12 +275,7 @@ main, .mainContent{
    
 /*#endregion top Content & Text*/
         
-        
-
-            
-    
-  
-/*------------------------------------------------------------*/
+/*#region About------------------------------------------------------------*/
 .about{
     height: auto;
     width: 100%;
@@ -312,7 +309,16 @@ main, .mainContent{
         color: #606060;
         white-space: wrap;
     } 
-/*------------------------------------------------------------*/
+    .aboutContent li{
+        color: #000;
+        cursor: auto;
+    }
+    .skillLst i{
+        color: #606060;
+        font-size: 1.1rem;
+        margin-right: 7px;
+    }
+/*#endregion About------------------------------------------------------------*/
 /*#region Projects*/
 .projectBG{
     width: 100%;

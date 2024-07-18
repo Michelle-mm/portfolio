@@ -1,12 +1,12 @@
 
 /*#region top navBar*/
 img#navImg{
-    width: 2.7rem;
-    height: 2.5rem;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
+    padding: 5px;
 }
 img#navImg:hover{
-    border-radius: 50%;
     background-color: #dbdbdbc9;
 }
 
@@ -35,22 +35,26 @@ nav > ul{
         height: 60px;
         background-color: whitesmoke;
         justify-content: space-evenly;
+        align-items: center;
         margin: 10px auto;
         border-radius: 20px;
         box-shadow: 5px 3px 4px #e9e7e7;
         overflow: hidden;
     }
+        ul.topNavBar a{
+            padding: 0.7rem 0.5rem;
+        }
         ul.topNavBar a:hover, nav.topNav span:hover{
             background-color: #dbdbdbc9;
             border-radius: 5px;
-            padding: 0.7rem 0.5rem;
         } .sidebarBtn > a:hover{
             background-color: transparent;
-            } span.topNavBarMenuBtn:hover{
-                padding: 0.5rem ;
-            }
+            } 
         ul.topNavBar a.imgAddr:hover{
             background-color: transparent;
+        }
+        span.topNavBarMenuBtn{
+            padding: 0.5rem ;
         }
     
 

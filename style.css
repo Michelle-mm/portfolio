@@ -304,7 +304,7 @@ main, .mainContent{
         font-weight: 400;
         margin-left: 1rem;
         line-height: 1.4rem;
-    } .aboutContent > span, .aboutContent > a{
+    } .aboutContent > span.uiuc, .aboutContent > a{
         font-weight: bold;
         color: #606060;
         white-space: wrap;

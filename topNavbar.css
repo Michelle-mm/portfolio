@@ -10,52 +10,39 @@ img#navImg:hover{
     background-color: #dbdbdbc9;
 }
 
-a, li{
-    text-decoration: none;
-    cursor: pointer;
-    color: var(--BGBLUE);
+ul.topNav-ul{
+    display: none;
+    width: 100%;
+    height: 60px;
+    background-color: whitesmoke;
+    
+    font-size: 1.2rem;
+    font-weight: 600;
     list-style: none;
     line-height: 1.5rem;
     white-space: nowrap;
+    margin: 10px auto;
+    border-radius: 20px;
+    box-shadow: 5px 3px 4px #e9e7e7;
+    overflow: hidden;
 }
-
-nav > ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 7px;
-    font-size: 1.2rem;
-    font-weight: 500;
-    padding: 1.3rem;
-}
-    ul.topNavBar{
-        display: none;
-        width: 80%;
-        min-width: fit-content;
-        height: 60px;
-        background-color: whitesmoke;
-        justify-content: space-evenly;
-        align-items: center;
-        margin: 10px auto;
-        border-radius: 20px;
-        box-shadow: 5px 3px 4px #e9e7e7;
-        overflow: hidden;
+    ul.topNav-ul li, ul.topNav-ul a{
+        padding: 0.7rem 0.5rem;
+        color: #7fb3f7;
+        transition: 0.4s background-color ease, 0.4s border-radius ease;
     }
-        ul.topNavBar a{
-            padding: 0.7rem 0.5rem;
-        }
-        ul.topNavBar a:hover, nav.topNav span:hover{
-            background-color: #dbdbdbc9;
-            border-radius: 5px;
-        } .sidebarBtn > a:hover{
-            background-color: transparent;
-            } 
-        ul.topNavBar a.imgAddr:hover{
-            background-color: transparent;
-        }
-        span.topNavBarMenuBtn{
-            padding: 0.5rem ;
-        }
+    ul.topNav-ul li:hover, ul.topNav-ul li:focus, ul.topNav-ul li:active{
+        background-color: #dbdbdbc9;
+        border-radius: 5px;
+    }
+
+    ul.topNav-ul li.imgAddr:hover{
+        background-color: transparent;
+    }
+    span.topNavBarMenuBtn{
+        margin-top: 5px;
+    }
+
     
 
 /*#endregion top navBar*/
@@ -67,7 +54,9 @@ nav > ul{
 }
 
 @media screen and (min-width: 576px){
-    ul.topNavBar{
+    ul.topNav-ul{
         display: flex;
+        justify-content: space-evenly;
+        align-items: center;
     }    
 }

@@ -2,10 +2,22 @@
 nav.sideNav{
     display: none;
     z-index: 999;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100dvh;
+    width: 30%;
+    padding: 0.5rem;
+    padding-right: 1rem;
+    background-color: #f5f5f59f;
+    backdrop-filter: blur(10px);
+    /*for sm view*/
+    flex-direction: column;
 }
 .webTitle{
-    color: rgb(158, 170, 175);
-    margin: 1.2rem;
+    color: #9eaaaf;
+    margin: 1.2rem 1rem 1.2rem 0.4rem;
+    height: 73px;
     position: relative;
 }   
     .webTitle img.mylogo{
@@ -22,41 +34,36 @@ nav.sideNav{
         font-weight: 800;
     } .webTitle > a > p{
         font-weight: 600;
-        font-size: 1rem;
-        margin-left: 4rem;
-        margin-top: -0.3rem;
+        font-size: 0.8rem;
+        margin-left: 2.6rem;
+        margin-top: -0.1rem;
+        text-shadow: -0.6px -0.6px #fff;
     }
-.sideBarContainer{
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 30%;
-    min-width: fit-content;
-    padding: 5px;
-    background-color: rgba(245, 245, 245, 0.623);
-    backdrop-filter: blur(10px);
-}
-ul.sideBar{
+
+ul.sideBar-ul{
     display: flex;
     flex-flow: column wrap;
     width: 100%;
     align-items: flex-start;
     justify-content: flex-start;
 }
-    .sideBar li, .sideBar a{
+    .sideBar-ul li, .sideBar-ul a{
         width: 100%;
         line-height: 2.5rem;
         padding: 3px;
-        padding-left: 1rem;
-        display: block;
-    }.sideBarLst:hover, .sideBar a:hover{
-        width: 100%;
+        padding-left: 5px;
+        cursor: pointer;
+    }
+    .sideBarLst:hover, .sideBar-ul a:hover{
         background-color: #d6d6d6;
         border-radius: 2px;
         transition: background-color 0.3s ease;
     }
-.sideBarContainer .social-icons{
+    .sideBar-ul a:hover{
+        background-color: transparent;
+    }
+/* .sideBarContainer  */
+.social-icons{
     margin-top: 0.5rem;
     margin-left: 1.7rem;
 }  
@@ -108,63 +115,75 @@ ul.sideBar{
         45%{ opacity: 1;}
     }
 
+li.closeBtn span{
+    border-radius: 50%;
+    padding: 7px;
+    transition: 0.3s background-color ease;
+}
+li.closeBtn span:hover{
+    background-color: lightgray;
+}
 @media screen and (min-width: 576px){
     .webTitle{
-        margin:1.2rem;
+        margin: 1.2rem 1rem 1.2rem 0.8rem;
     }
     .webTitle > h3{
         font-size: 2rem;
     }
-    .webTitle > p{
-        font-size: 1rem;
-        margin-left: 4rem;
+    .webTitle > a > p{
+        font-weight: 600;
+        font-size: 1.1rem;
+        margin-left: 3.5rem;
+        margin-top: -0.1rem;
+        text-shadow: -0.6px -0.6px #fff;
     }
+
 }
 
-@media screen and (min-width: 1000px){
-    /*#region SideBar*/
+@media screen and (min-width: 800px){
+    /*#region sideBar*/
         nav.sideNav{
+            width: max(100%, 220px);
+            height: 100%;
             display: flex;
             flex-direction: column;
-            height: 100%;
-            width: 25%;
+            position: static;
+            background-color: #7fb3f7;
+            /* margin: 0; */
+            gap: 1.5rem;
         }   
+        .webTitle{
+            margin: 1.2rem 1rem 0;
+        }
             .webTitle img.mylogo{
                 width: 1.5rem;
                 height: 1.5rem;
-                /* right: 73px;
-                top: -8px; */
-                left: 2.2rem;
-                top: 31px;
+                left: 35px;
+                top: 33px;
                 opacity: 0.9;
             }
             .webTitle > a > h3{
                 color: #606060;
-                font-size: 2.5rem;
+                font-size: 3rem;
             } .webTitle > a > p{
-                color: white;
+                /* color: white; */
+                color: whitesmoke;
                 font-size: 1.2rem;
-                margin-top: 5px;
+                margin-top: 0.5rem;
+                margin-left: 4.1rem;
             } 
-            .sideBarContainer{
-                background-color: rgb(127, 179, 247);
-                left: 0;
-                width: 25%;
-                display: flex;
-                flex-direction: column;
-                gap: 25px;
-            } .sideBar{
+            .sideBar-ul{
                 width: 25%;
                 backdrop-filter: none;
-            } .sideBar a{
+            } .sideBar-ul a{
                 color: white;
                 font-size: 1.5rem;
                 padding-left: 1rem;
-            } #closeBtn{
+            } li.closeBtn{
                 display: none;
             } 
             .sideNav .social-icons{
                 display: block;
             }
-/*#endregion SideBar*/
+/*#endregion sideBar*/
 }

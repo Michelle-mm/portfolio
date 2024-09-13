@@ -1,6 +1,6 @@
 const sidebarBtns = document.querySelectorAll('.openSideBar');
 const sideBar = document.querySelector('.sideNav');
-const closeBtn = document.querySelector('#closeBtn');
+const closeBtn = document.querySelector('li.closeBtn');
 
 function showSideBar() {
     sideBar.style.display = 'flex';

@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <link rel="icon" href="../imgs/myLogo-Nobg.PNG" style="rotate:45deg;" type="image">
+        <title>MY Projects</title>
         <link rel="stylesheet" href="./projects.css" />
         <link rel="stylesheet" href="../sidebar.css">
         <link rel="stylesheet" href="../topNavbar.css">
@@ -14,7 +15,7 @@
     <body>
         <header>
             <nav class="topNav">
-                <ul class="topNavBar">
+                <ul class="topNav-ul">
                     <li><a href="../index.html" class="imgAddr"><img id="navImg" src="../imgs/Cinna.jpg" alt="myPhoto" width="60px" height="50px"></a></li>
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="#">Projects</a></li>
@@ -28,7 +29,7 @@
                 <p>COPIED!<i class="ri-checkbox-circle-line checkIcon"></i></p>
             </div>
             <nav class="sideNav">
-                <div class="sideBarContainer">
+                <!-- <div class="sideBarContainer"> -->
                     <div class="webTitle">
                         <a href="../index.html">
                             <h3>Portfolio</h3>
@@ -36,8 +37,8 @@
                         </a>
                         <img class="mylogo" src="../imgs/myLogo-Nobg.PNG" alt="mylogo" width="300" height="300">
                     </div>
-                    <ul class="sideBar">
-                        <li id="closeBtn"><span class="material-symbols-outlined closeBtn">close</span></li>
+                    <ul class="sideBar-ul">
+                        <li class="closeBtn"><span class="material-symbols-outlined">close</span></li>
                         <li class="sideBarLst"><a href="../index.html">Home</a></li>
                         <li class="sideBarLst"><a href="#">Projects</a></li>
                         <li class="sideBarLst"><a href="../index.html#contact">Contact Me</a></li>
@@ -49,7 +50,7 @@
                         <a href="https://www.linkedin.com/in/%E6%80%9D%E8%BE%B0-%E8%91%89-485066319/" class="sideBarSocialIcon"><i class="ri-linkedin-box-line"></i></a>
                         <a href="https://github.com/Michelle-mm" class="sideBarSocialIcon"><i class="ri-github-fill "></i></a>
                     </div> 
-                </div>
+                <!-- </div> -->
             </nav>
             <section class="projectsContainer">
                 <div class="heading">
@@ -59,17 +60,17 @@
                     </button>
                 </div>
                 <div class="projects">
-                    <div class="project">
+                    <div class="project dashboard">
                         <h3 class="projectTitle"><a href="https://github.com/Michelle-mm/dashboard">Admin Dashboard</a></h3>
                         <p class="projectDetail">A e-commerce platform interface includes different tables, and three extra functions.</p>
                         <div class="projectImgBox"><a href="https://github.com/Michelle-mm/dashboard"><img class="projectImg" src="../imgs/dashboard1.JPG" width="180px" height="120px"/></a></div>
                     </div>
-                    <div class="project">
+                    <div class="project splitApp">
                         <h3 class="projectTitle"><a href="https://github.com/Michelle-mm/SplitMoney_App">Money Split App</a></h3>
                         <p class="projectDetail">This is an responsive app that can record your splits, create your friend list, set your favorite theme color.</p>
                         <div class="projectImgBox"><a href="https://github.com/Michelle-mm/SplitMoney_App"><img class="projectImg" src="../imgs//splitApp-home-lg.JPG" width="180px" height="120px"/></a></div>
                     </div>
-                    <div class="project">
+                    <div class="project memeGen">
                         <h3 class="projectTitle"><a href="https://github.com/Michelle-mm/meme_generator">Meme Generator</a></h3>
                         <p class="projectDetail">Integrating API generate meme that could type in custom texts.</p>
                         <div class="projectImgBox"><a href="https://github.com/Michelle-mm/meme_generator"><img class="projectImg" src="../imgs//memeGenerator.JPG" width="180px" height="120px"/></a></div>
@@ -81,54 +82,207 @@
                         <p class="projectDetail">A simple note app that includes basic functions, CRUD, notes ordering by update-date, Firebase data storage, etc.</p>
                         <div class="projectImgBox"><a href="https://github.com/Michelle-mm/Note_APP"><img class="projectImg" src="../imgs//noteapp2.JPG" width="180px" height="120px"/></a></div>
                     </div>
-                    <div class="project">
+                    <div class="project movieApp">
                         <h3 class="projectTitle">
                             <a href="https://github.com/Michelle-mm/movieAPI_miniProject">Movie Searching App</a>
                         </h3>
                         <p class="projectDetail">A dynamic movie searching app.</p>
                         <div class="projectImgBox"><a href="https://github.com/Michelle-mm/movieAPI_miniProject"><img class="projectImg" src="../imgs//movieApi.JPG" width="180px" height="120px"/></a></div>
                     </div>
-                    <div class="project">
+                    <div class="project uiucResult">
                         <h3 class="projectTitle">
                             <a href="https://github.com/Michelle-mm/movieAPI_miniProject">UIUC intern Result Present</a>
                         </h3>
                         <p class="projectDetail">Showcase the result of the project I participated in UIUC as intern. Introduce the project with model-test-run function</p>
                         <div class="projectImgBox"><a href="./"><img class="projectImg" src="../imgs/showuiuc-1.png" width="180px" height="120px"/></a></div>
                     </div>
-                    <div class="project addNewProject">
+                    <div class="project reactGame">
                         <h3 class="projectTitle">
-                            <a href="#">Add project</a>
+                            <a href="https://github.com/Michelle-mm/react_tinyGame">Game App</a>
                         </h3>
-                        <i class="ri-add-large-line"></i>
+                        <p class="projectDetail">Four simple game, record the game results.</p>
+                        <div class="projectImgBox"><a href="./"><img class="projectImg" src="../imgs/gameApp-homepage.JPG" width="180px" height="120px"/></a></div>
                     </div>
                 </div>
             </section>
-            <form class="addProjectWindow">
-                <i class="ri-close-circle-line formCloseBtn"></i>
-                <fieldset>
-                    <legend>New project information</legend>
-                    <label for="authority_code">
-                        Authurity Code
-                        <input type="password" class="authorityCode" id="authority_code" name='code' placeholder="authority code" required/>
-                        <p class='wrongCode'></p>
-                    </label>
-                    <label for="Project_Name">
-                        Project Name
-                    </label>
-                        <input type="text" id='Project_Name' name='projectName' required/>
-                    <label for="Project_Description">
-                        Project Description
-                    </label>
-                        <input type='text' id="Project_Description" class="inputDescription" name='projectDescription' required/>
-                    <label for="Project_Link">
-                        Project Link
-                    </label>
-                        <input type="url" id="Project_Link" name='projectLink'required><br>
-                    <button class="addBtn" type="button">ADD</button>
-                </fieldset>
-            </form>
+            <div class="mainBottom copyrightBG">
+                <p class="copyright">&lt;&lt;&lt; &copy; Michelle &gt;&gt;&gt;</p>
+            </div>
+            <div class="detailWindow splitApp">
+                <button class="closeBtn" onclick="this.parentElement.classList.toggle('visible');">
+                    <i class="ri-close-line"></i>
+                </button>
+                <h3 class="projectTitle">Money Split App <i class="ri-link-m"><a href="https://github.com/Michelle-mm/SplitMoney_App"></a></i></h3>
+                <ul class="projectDetail">
+                    <li>An easy responsive money split App.</li>
+                    <li>create friend list</li>
+                    <li>set theme color</li>
+                </ul>
+                <div class="homepage">
+                    <p style="margin-bottom: 0.8rem;"><strong> Home page:</strong></p>
+                    <p>Easily check each record with your friends respectively</p>
+                    <p style="margin-bottom: 0.5rem;">Check all record you participated the payment.</p>
+                    <img src="../imgs/splitApp-home-lg.JPG" alt="split-homepage" width="300" height="250">
+                </div>
+                <div>
+                    <p style="margin-bottom: 0.8rem;"><strong>Make your friend list!</strong></p>
+                    <img src="../imgs/splitApp-friend.JPG" alt="friendLst1" width="200" height="250">
+                    <img src="../imgs/splitApp-friend2.JPG" alt="friendLst2" width="200" height="250">
+                </div>
+                <div>
+                    <p style="margin-bottom: 0.8rem;"><strong>Record split detail</strong></p>
+                    <p style="margin-bottom: 0.5rem;">Enter item detail, and choose the split methods</p>
+                    <img src="../imgs/splitApp-split.JPG" alt="splitpg" width="200" height="250">
+                </div>
+                <div>
+                    <p style="margin-bottom: 0.8rem;"><strong>See all records</strong></p>
+                    <img src="../imgs/splitApp-history.JPG" alt="history" width="200" height="250">
+                </div>
+            </div>
+            <div class="detailWindow dashboard">
+                <button class="closeBtn" onclick="this.parentElement.classList.toggle('visible');">
+                    <i class="ri-close-line"></i>
+                </button>
+                <h3 class="projectTitle">Admin Dashboard<i class="ri-link-m"><a href="https://github.com/Michelle-mm/dashboard"></a></i></h3>
+                <ul class="projectDetail">
+                    <li>An easy responsive Dashboard</li>
+                    <li>A few functions: Tables, Canlendar, Color-Selector</li>
+                </ul>
+                <div class="homepage">
+                    <p style="margin-bottom: 0.8rem;"><strong> Home page:</strong></p>
+                    <p>Easily check each record with your friends respectively</p>
+                    <p style="margin-bottom: 0.5rem;">Check all record you participated the payment.</p>
+                    <img src="../imgs/dashboard1.JPG" alt="dashBorad-homepage" width="400" height="250">
+                </div>
+                <div>
+                    <p style="margin-bottom: 0.8rem;"><strong>Tables</strong></p>
+                    <img src="../imgs/dashboard2.JPG" alt="dashBorad2" width="400" height="250">
+                    <img src="../imgs/dashboard5.JPG" alt="dashBorad2" width="400" height="250">
+                </div>
+                <div>
+                    <p style="margin-bottom: 0.8rem;"><strong>Canlendar</strong></p>
+                    <p style="margin-bottom: 0.5rem;">Enter item detail, and choose the split methods</p>
+                    <img src="../imgs/dashboard3.JPG" alt="dashBorad3" style="margin-bottom: 0.6rem;" width="400" height="250">
+                    <p style="margin-bottom: 0.8rem;"><strong>Simple Note Editor, Color Selector</strong></p>
+                    <p style="margin-bottom: 0.5rem;">A simple note taker</p>
+                    <p style="margin-bottom: 0.5rem;">Selector favorite color for the theme</p>
+                    <img src="../imgs/dashboard4.JPG" alt="dashBorad3" width="400" height="250">
+                </div>
+            </div>
+            <div class="detailWindow memeGen">
+                <button class="closeBtn" onclick="this.parentElement.classList.toggle('visible');">
+                    <i class="ri-close-line"></i>
+                </button>
+                <h3 class="projectTitle">Meme Generator<i class="ri-link-m"><a href="https://github.com/Michelle-mm/meme_generator"></a></i></h3>
+                <ul class="projectDetail">
+                    <li>Find Meme in "https://api.imgflip.com/get_memes" and edit it!</li>
+                    <li>Or get a random meme</li>
+                </ul>
+                <div class="homepage">
+                    <p style="margin-bottom: 0.8rem;"><strong> Home page:</strong></p>
+                    <img src="../imgs/memeGenerator.JPG" alt="dashBorad-homepage" width="400" height="250">
+                </div>
+                <div class="homepage">
+                    <p style="margin-bottom: 0.8rem;"><strong>Search & Edit!:</strong></p>
+                    <p>You can find meme with text or just get a meme randomly.</p>
+                    <p style="margin-bottom: 0.5rem;">Put any text you want on the meme.</p>
+                    <p style="margin-bottom: 0.5rem;">Choose your theme and text color!</p>
+                    <img src="../imgs/memeGenerator2.JPG" alt="dashBorad-homepage" width="350" height="250">
+                    <img src="../imgs/memeGenerator3.JPG" alt="dashBorad-homepage" width="350" height="250">
+                </div>
+            </div>
+            <div class="detailWindow projectNote">
+                <button class="closeBtn" onclick="this.parentElement.classList.toggle('visible');">
+                    <i class="ri-close-line"></i>
+                </button>
+                <h3 class="projectTitle">Note App<i class="ri-link-m"><a href="https://github.com/Michelle-mm/Note_APP"></a></i></h3>
+                <ul class="projectDetail">
+                    <li>A note app based on ReactMde, react-split, etc.</li>
+                    <li>Functions: Edit note, update-first order, delete/create note</li>
+                    <li>storage: Firebase</li>
+                </ul>
+                <div class="homepage">
+                    <p style="margin-bottom: 0.8rem;"><strong> Home page:</strong></p>
+                    <p></p>
+                    <p style="margin-bottom: 0.5rem;">Check all record you participated the payment.</p>
+                    <img src="../imgs/noteapp.JPG" alt="noteApp-homepage" width="400" height="250">
+                </div>
+                <div>
+                    <p style="margin-bottom: 0.8rem;"><strong>Tables</strong></p>
+                    <img src="../imgs/noteapp2.JPG" alt="noteApp2" width="400" height="250">
+                </div>
+            </div>
+            <div class="detailWindow movieApp">
+                <button class="closeBtn" onclick="this.parentElement.classList.toggle('visible');">
+                    <i class="ri-close-line"></i>
+                </button>
+                <h3 class="projectTitle">Movie Searching App<i class="ri-link-m"><a href="https://github.com/Michelle-mm/movieAPI_miniProject"></a></i></h3>
+                <ul class="projectDetail">
+                    <li>Search movie from OMDB API</li>
+                    <li>dynamic responsive movie searching app.</li>
+                </ul>
+                <div class="homepage">
+                    <p style="margin-bottom: 0.8rem;"><strong>Home page:</strong></p>
+                    <p style="margin-bottom: 0.5rem;">Search the movie</p>
+                    <img src="../imgs/movieApi.JPG" alt="movieApp-homepage" width="400" height="250">
+                </div>
+            </div>
+            <div class="detailWindow reactGame">
+                <button class="closeBtn" onclick="this.parentElement.classList.toggle('visible');">
+                    <i class="ri-close-line"></i>
+                </button>
+                <h3 class="projectTitle">Game App<i class="ri-link-m"><a href="https://github.com/Michelle-mm/react_tinyGame"></a></i></h3>
+                <ul class="projectDetail">
+                    <li>Four games: Tic-tac-toe, Tenzies, Rock-paper-scissor, Mine-sweeper.</li>
+                    <li>Record/delete game results!</li>
+                </ul>
+                <div class="homepage">
+                    <p style="margin-bottom: 0.8rem;"><strong>Home page:</strong></p>
+                    <img src="../imgs/gameApp-homepage.JPG" alt="gameApp-homepage" width="400" height="250">
+                    <img src="../imgs/gameApp-homepage-sm.JPG" alt="gameApp-homepage" width="200" height="250">
+                </div>
+                <div>
+                    <p style="margin-bottom: 0.8rem;"><strong>Tenzies</strong></p>
+                    <p style="margin-bottom: 0.5rem;">click the dices with the same number, re-roll the rest dice until all dices is clicked and is all in the number</p>
+                    <img src="../imgs/gameApp-tenzie1.JPG" alt="gameApp2" width="400" height="250">
+                    <img src="../imgs/gameApp-tenzie2.JPG" alt="gameApp2" width="400" height="250">
+                </div>
+                <div>
+                    <p style="margin-bottom: 0.8rem;"><strong>Tic-tac-toe</strong></p>
+                    <p>Play with a friend or play with the computer</p>
+                    <p>click the history record button on the right hand side to get to the specific step</p>
+                    <img src="../imgs/gameApp-TTT1.JPG" alt="gameApp3" width="400" height="250">
+                    <img src="../imgs/gameApp-TTT2.JPG" alt="gameApp3" width="400" height="250">
+                </div>
+                <div>
+                    <p style="margin-bottom: 0.8rem;"><strong>Rock-paper-scissor</strong></p>
+                    <p style="margin-bottom: 0.5rem;">The result is determined after three wins, losses, or ties.</p>
+                    <img src="../imgs/gameApp-rps1.JPG" alt="gameApp4" width="400" height="250">
+                    <img src="../imgs/gameApp-rps2.JPG" alt="gameApp4" width="400" height="250">
+                    <img src="../imgs/gameApp-rps3.JPG" alt="gameApp4" width="400" height="250">
+                </div>
+                <div>
+                    <p style="margin-bottom: 0.8rem;"><strong>Mine-sweeper</strong></p>
+                    <p>select board size</p>
+                    <p>timer function</p>
+                    <img src="../imgs/gameApp-mine1.JPG" alt="gameApp5" width="400" height="250">
+                    <img src="../imgs/gameApp-mine2.JPG" alt="gameApp5" width="400" height="250">
+                    <img src="../imgs/gameApp-mine3.JPG" alt="gameApp5" width="400" height="250">
+                </div>
+                <div>
+                    <p style="margin-bottom: 0.8rem;"><strong>Records</strong></p>
+                    <p style="margin-bottom: 0.5rem;">check all records of four games</p>
+                    <img src="../imgs/gameApp-rec1.JPG" alt="gameApp5" width="400" height="250">
+                    <img src="../imgs/gameApp-rec2.JPG" alt="gameApp5" width="400" height="250">
+                </div>
+            </div>
+           
         </main>
+        <footer>
+            <div class="copyrightBG">
+                <p class="copyright">&lt;&lt;&lt; &copy; Michelle &gt;&gt;&gt;</p>
+            </div>
+        </footer>
         <script src='./projectScript.js'></script>
-        
     </body>
 </html>

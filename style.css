@@ -9,9 +9,10 @@
 }
 html{
     scroll-behavior: smooth;
+    height: 100%;
 }
 
-body{
+body .bodyContent{
     background-color: whitesmoke;
     display: flex;
     flex-flow: column wrap;
@@ -29,17 +30,6 @@ a, li{
 button{
     cursor: pointer;
 }
-nav > a{
-    height: 100%;
-}
-
-header{
-    display: none;
-}
-nav.topNav{
-    width: 100%;
-    height: 80px;
-}
 
 .menuIconBtn{
     position: absolute;
@@ -52,27 +42,24 @@ nav.topNav{
         font-size: 5rem;
         transform: scale(1.3);
 }
-    .menuBtn:hover, span.closeBtn:hover{
+    .menuBtn:hover{
         background-color: rgba(234, 236, 236, 0.719);
         box-shadow: 3px 2px 2px #c5c5c5ce;
         border-radius: 45%;
-        padding: 2px;
+        /* padding: 2px; */
     }
 
    
     
 /* --------------------------------------------- */
 
-main, .mainContent{
-    width: 100%;
-    max-width: 100vw;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: center;
+main{
+    width: min(100%, 100vw);
     overflow: hidden;
 }
-
+.mainContent{
+    width: 100%;
+}
 .about, .projectBG, .contact, footer{
     background-color: #e9e7e7;
 }
@@ -436,14 +423,16 @@ footer{
 
 @media screen and (min-width: 1000px){
     main{
-        flex-flow: row nowrap;
-        position: relative;
+        display: grid;
+        grid-template-columns: 27% 73%;
+        place-content: center;
+        /* position: relative; */
     }
-    header, nav.topNav{
+    nav.topNav{
         display: none;
     }
     .mainContent{
-        width: 75%;
+        width: clamp(750px, 100%, 950px);
     }
     
 /*#region topImgAnimation*/
@@ -507,7 +496,8 @@ footer{
 
 @media screen and (min-width: 576px){
     header{
-        display: block;
+        width: 80%;
+        margin: auto;
     }
     button.menuIconBtn{
         display: none;
